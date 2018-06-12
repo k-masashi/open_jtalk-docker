@@ -42,7 +42,7 @@ public class VoiceRestControllerTest {
 
         assertThat(resp.statusCode(), is(HttpStatus.OK.value()));
         assertThat(resp.contentType(), is("audio/wav;charset=UTF-8"));
-        assertThat(resp.header("Content-Length"), is("154124"));
+        assertThat(resp.header("Content-Length"), is("248684"));
         assertThat(DigestUtils.md5Hex(resp.asByteArray()), is(md5));
     }
 
@@ -54,7 +54,7 @@ public class VoiceRestControllerTest {
 
         assertThat(resp.statusCode(), is(HttpStatus.OK.value()));
         assertThat(resp.contentType(), is("audio/wav;charset=UTF-8"));
-        assertThat(resp.header("Content-Length"), is("55340"));
+        assertThat(resp.header("Content-Length"), is("86828"));
         assertThat(DigestUtils.md5Hex(resp.asByteArray()), is(md5));
     }
 
