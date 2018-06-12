@@ -1,7 +1,7 @@
 #!/bin/sh
 
 if [ -z "$OPEN_JTALK_VOICE_FILE" ]; then
-  OPEN_JTALK_VOICE_FILE=/usr/local/lib/hts_voice_nitech_jp_atr503_m001-1.05/nitech_jp_atr503_m001.htsvoice
+  OPEN_JTALK_VOICE_FILE=/usr/local/lib/MMDAgent_Example-1.7/Voice/mei/mei_bashful.htsvoice
 fi
 
 if [ -z "$OPEN_JTALK_DIC_DIR" ]; then

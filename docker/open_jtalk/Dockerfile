@@ -25,9 +25,16 @@ RUN wget http://downloads.sourceforge.net/open-jtalk/open_jtalk-1.09.tar.gz && \
     make && \
     make install
 
+#男性ボイスのダウンロード
 RUN wget http://downloads.sourceforge.net/open-jtalk/hts_voice_nitech_jp_atr503_m001-1.05.tar.gz && \
     tar zxvf hts_voice_nitech_jp_atr503_m001-1.05.tar.gz && \
     cp -r hts_voice_nitech_jp_atr503_m001-1.05 /usr/local/lib/hts_voice_nitech_jp_atr503_m001-1.05
+
+#女性ボイスのダウンロード
+RUN wget http://sourceforge.net/projects/mmdagent/files/MMDAgent_Example/MMDAgent_Example-1.7/MMDAgent_Example-1.7.zip --no-check-certificate
+ && \
+    unzip MMDAgent_Example-1.7.zip && \
+    cp -r MMDAgent_Example-1.7 /usr/local/lib/MMDAgent_Example-1.7
 
 RUN wget http://downloads.sourceforge.net/open-jtalk/open_jtalk_dic_utf_8-1.09.tar.gz && \
     tar zxvf open_jtalk_dic_utf_8-1.09.tar.gz && \
