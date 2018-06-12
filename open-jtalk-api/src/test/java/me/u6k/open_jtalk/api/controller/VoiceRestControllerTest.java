@@ -38,7 +38,7 @@ public class VoiceRestControllerTest {
     @Test
     public void say_テキストを指定して音声データを出力() {
         Response resp = given().get("/voice?text=こんにちは");
-        String md5 = "6863e3bcac79948b7c2cc24283d4571f";
+        String md5 = "6ff8b66eb2a30a3122c66fc736d4f481";
 
         assertThat(resp.statusCode(), is(HttpStatus.OK.value()));
         assertThat(resp.contentType(), is("audio/wav;charset=UTF-8"));
@@ -50,7 +50,7 @@ public class VoiceRestControllerTest {
     public void say_パラメータをいろいろ設定して音声データを出力() {
         String url = "/voice?text=こんにちは&s=44000&p=128&a=0.5&b=0.1&r=1.5&fm=0.1&u=0.6&jm=1.1&jf=1.1&g=60.0&z=0";
         Response resp = given().get(url);
-        String md5 = "569f434ab6f2295cc0617e9ac0b01877";
+        String md5 = "ba0a72b91e76b06178b68f32c5ada92d";
 
         assertThat(resp.statusCode(), is(HttpStatus.OK.value()));
         assertThat(resp.contentType(), is("audio/wav;charset=UTF-8"));

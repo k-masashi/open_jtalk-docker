@@ -28,7 +28,7 @@ public class VoiceServiceTest {
 
         byte[] result = _s.say(param);
 
-        String md5 = "6863e3bcac79948b7c2cc24283d4571f";
+        String md5 = "6ff8b66eb2a30a3122c66fc736d4f481";
 
         assertThat(DigestUtils.md5Hex(result), is(md5));
     }
@@ -51,7 +51,7 @@ public class VoiceServiceTest {
 
         byte[] result = _s.say(param);
 
-        String md5 = "569f434ab6f2295cc0617e9ac0b01877";
+        String md5 = "ba0a72b91e76b06178b68f32c5ada92d";
 
         assertThat(DigestUtils.md5Hex(result), is(md5));
     }
