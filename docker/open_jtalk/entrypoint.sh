@@ -1,11 +1,11 @@
 #!/bin/sh
 
 if [ -z "$OPEN_JTALK_VOICE_FILE" ]; then
-  OPEN_JTALK_VOICE_FILE=/usr/local/lib/MMDAgent_Example-1.7/Voice/mei/mei_bashful.htsvoice
+  OPEN_JTALK_VOICE_FILE=/usr/local/lib/htsvoice/nitech_jp_atr503_m001.htsvoice
 fi
 
 if [ -z "$OPEN_JTALK_DIC_DIR" ]; then
-  OPEN_JTALK_DIC_DIR=/usr/local/lib/open_jtalk_dic_utf_8-1.09
+  OPEN_JTALK_DIC_DIR=/usr/local/lib/open_jtalk_dic
 fi
 
 if [ -z "$OPEN_JTALK_OPTIONS" ]; then
