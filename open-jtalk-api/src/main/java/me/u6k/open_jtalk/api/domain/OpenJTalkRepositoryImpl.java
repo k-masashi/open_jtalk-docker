@@ -44,7 +44,7 @@ public class OpenJTalkRepositoryImpl implements OpenJTalkRepository {
             String cmd = "open_jtalk";
             // cmd += " -m /usr/local/lib/hts_voice_nitech_jp_atr503_m001-1.05/nitech_jp_atr503_m001.htsvoice";
             cmd += " -m /usr/local/lib/htsvoice/mei_bashful.htsvoice";
-            cmd += " -x /usr/local/lib/open_jtalk_dic_utf_8-1.09/";
+            cmd += " -x /usr/local/lib/open_jtalk_dic/";
             if (param.getSamplingFrequency() != null) {
                 cmd += " -s " + param.getSamplingFrequency();
             }
